@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: control-mapping-api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: control-mapping-api
+    description: Inner API for control mappings (Controls database)
